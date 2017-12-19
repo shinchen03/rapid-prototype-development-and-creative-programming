@@ -1,0 +1,16 @@
+
+    <h1>Reviews for {{coffee.brand}}</h1>
+    <table class="table table-striped">
+        <tr>
+          <b>
+            <th>Reviewer</th>
+            <th>Comment</th>
+            <th>Rating</th>
+          </b>
+        </tr>
+        <tr ng-repeat="review in coffee.reviews">
+            <td>{{review.reviewer}}</td>
+            <td>{{review.comment}}</td>
+            <td>{{review.rating}}</td>
+        </tr>
+    </table>

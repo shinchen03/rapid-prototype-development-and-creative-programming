@@ -1,0 +1,3 @@
+1. \bhello world\b
+2. \b\w*[aeiou]{3}\w*\b
+3. ^[A-Z]{2}\d{3,4}$

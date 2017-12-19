@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>loginpage</title>
+            <link rel="stylesheet" type="text/css" href="stylesheet2.css" />
+        </head>
+        <body>
+            <h1>expected create your profile</h1>
+            <form enctype="multipart/form-data" action="expectedlogin2.php" method="POST">
+                <ul><li>
+                <label for="username">username:</label>
+                <input type="text" name = "username" />
+                </li>
+                <br><br>
+                <li>
+                <label for= "email">email:</label>
+                <input type="text" name="email" />
+                </li>
+                <br><br>
+                <li>
+                <label for ="age">age:</label>
+                <input type="text" name = "age" />
+                </li>
+                <br><br>
+                <li>
+                <label for ="description">Description here</label>
+                <textarea name="description" cols="40" rows="4"></textarea>
+                </li>
+                <br><br>
+                <input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
+                <label for="uploadfile_input">Choose a file to upload:</label>
+                <input name="uploadedfile" type="file" id="uploadfile_input"/>
+                <br><br>
+                <input type ="submit" name="submit" value="Upload"/>
+                </ul>      
+            </form>
+        </body>
+            
+    </html>

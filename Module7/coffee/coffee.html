@@ -1,0 +1,32 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+
+    </div>
+    <div class="col-md-10">
+<body ng-controller="coffeeCtrl">
+    
+  <table class="table table-striped">
+    <tr>
+      <th>Reviews</th>
+      <th>Brand</th>
+      <th>Coffee</th>
+      <th>Country</th>
+   </tr>
+    <tr ng-repeat="coffee in coffees | filter:query | orderBy:'name'">
+      <td><a href="#/coffee/{{coffee.id}}">Reviews</a></td>
+      <td>{{coffee.brand}}</td>
+      <td>{{coffee.name}}</td>
+      <td>{{coffee.country}}</td>
+    </tr>
+  </table>
+ 
+
+</body>
+</div>
+  </div>
+</div>

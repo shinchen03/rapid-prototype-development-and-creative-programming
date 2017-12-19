@@ -1,0 +1,231 @@
+body{
+        background-color: #fff;
+}
+
+/*Header*/
+.header {
+        position: relative;
+        text-align:center;
+        padding:10px;
+        background: #e6f2c9;
+        height: 50px;
+        width:100%;
+        box-sizing: border-box;
+}
+
+.current-month {
+        font-size:20px;
+        padding: 3px 10px 0 10px;
+        text-transform: uppercase;
+        display: inline-block;
+        border: 1px solid #ccc;
+        color: #545454;
+        text-decoration: none;
+        font-size: 11px;
+        height: 30px;
+        box-sizing: border-box;
+        transition:background .1s;
+        border-top-left-radius:15px;
+        border-bottom-left-radius:15px;
+        border-top-right-radius:15px;
+        border-bottom-right-radius:15px;
+        background: #F3F3F5;
+}
+
+.header-title button:hover {
+        background: #8b8b8b;
+        border:1px solid #8b8b8b;
+        color:#fff;
+}
+
+.header-title button:active {
+        background: #222;
+        border:1px solid #222;
+        transition:none;
+}
+
+.header-title-date{
+        font-size: 15px;
+}
+
+/*Buttons*/
+
+.prev {
+        position: absolute;
+        top:0;
+        left:0;
+        width:50px;
+        height:100%;
+        opacity: .5;
+}
+.prev:hover {
+        opacity: 1;
+}
+
+.prev:after{
+        content:'';
+        position: absolute;
+        top:50%;
+        left:50%;
+        border-left:2px solid #222;
+        border-bottom:2px solid #222;
+        width:5px;
+        height:5px;
+        margin:-3px 0 0 -5px;
+        -webkit-transform:rotate(45deg) ;
+                -ms-transform:rotate(45deg) ;
+                transform:rotate(45deg) ;
+}
+
+.next {
+        position: absolute;
+        top:0;
+        right:0;
+        width:50px;
+        height:100%;
+        opacity: .5;
+}
+
+.next:hover {
+        opacity: 1;
+}
+
+.next:after{
+        content:'';
+        position: absolute;
+        top:50%;
+        left:50%;
+        border-right:2px solid #222;
+        border-top:2px solid #222;
+        width:5px;
+        height:5px;
+        margin:-3px 0 0 -5px;
+        -webkit-transform:rotate(45deg) ;
+                -ms-transform:rotate(45deg) ;
+                transform:rotate(45deg) ;
+}
+
+.prev{
+        border: hidden;
+        background: none;
+}
+
+.next{
+        border: hidden;
+        background: none;
+}
+
+/*Day titles*/
+
+.day-title-wrap {
+        display:table;
+        table-layout:fixed;
+        width:100%;
+        background: #e6f2c9;
+        color: #545454;
+}
+
+.day-title-wrap div {
+        width: 12%!important;
+        display:table-cell;
+        box-sizing:border-box;
+        border:1px solid #747575;
+        position: relative;
+        font-weight: bold;
+        text-align:center;
+        text-transform: uppercase;
+        font-size:14px;
+}
+
+/*Day blocks*/
+
+.day:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+        float: left;
+}
+
+.day-wrap {
+        display:table;
+        table-layout:fixed;
+        width:100%;
+        overflow: hidden;
+}
+.week {
+        display:table-row;
+        width:100%;
+}
+
+.day, .day-blank {
+        width: 14.28%!important;
+        display:table-cell;
+        vertical-align: top;
+        box-sizing:border-box;
+        position: relative;
+        font-weight: bold;
+        color:inherit;
+        background: #fff;
+        box-shadow: 0 0 0 1px #EBEBEB;
+        -webkit-transition: .25s;
+        transition:.25s;
+        text-decoration: none;
+}
+
+.day-blank {
+        background:#F3F3F5;
+}
+
+.day-number {
+        color: #585858;
+        position: relative;
+        line-height: 20px;
+        margin: 3px;
+        font-size:11px;
+}
+
+.indicator-wrap{
+        display: none;
+}
+
+/*Today*/
+
+.today .day-number {
+        color: #FFF;
+        background: #EA6565;
+        border-radius: 15px;
+        width: 17px;
+        height: 17px;
+}
+
+
+/* Days (1-31) */
+.days {
+    width:100%;
+    background: #f4f9e8;
+    margin: 0;
+    padding: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 14%;
+    margin-right:1.4px;
+    padding:0;
+    text-align: center;
+    font-size:12px;
+    color:#000000;
+    border:1px solid #747575;
+    height:55px;
+}
+.days ul .low {
+    color:#808080;
+}
+.days ul {
+    font-weight: bold;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+}
+}

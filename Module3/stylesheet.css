@@ -1,0 +1,5 @@
+div#title{font-size: 26px;}
+        div#sub{margin-left: 100px; font-size: large}
+        div#int{margin-bottom: 2px;}
+        label{float: left; width: 100px; margin-bottom: 5px; text-align: left;}
+        select{width: 725px; height: 20px; margin-bottom: 10px;}
